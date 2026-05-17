@@ -1,0 +1,84 @@
+﻿
+# ==================================================
+# GitHub Safe Upload Ignore Rules
+# Added by github-gh-safe-upload-v1.4.ps1
+# ==================================================
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# API keys / tokens / secrets
+*apikey*
+*api-key*
+*api_key*
+*secret*
+*token*
+*credential*
+*credentials*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs
+logs/
+*.log
+.github-upload-logs/
+
+# Reports / diagnostics / backups
+reports/
+backups/
+diagnostic*.txt
+diagnostic*.json
+*diagnostic*
+*report*
+真实诊断报告*
+诊断报告*
+错误诊断*
+error-diagnosis*
+
+# Runtime / local cache
+.cache/
+tmp/
+temp/
+*.tmp
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PyInstaller
+*.spec
+
+# Local private config
+local.config.json
+private.config.json
+secret*.json
+token*.json
+credentials*.json
